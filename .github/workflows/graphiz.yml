@@ -21,3 +21,10 @@ jobs:
       # Étape 3 : Exécuter le script
       - name: Générer les graphes
         run: chmod +x graphiz1.sh && ./graphiz1.sh g1
+
+      # Étape 4 : Uploader les fichiers en tant qu'artifacts
+      - name: Uploader les résultats
+        uses: actions/upload-artifact@v4
+        with:
+          name: graphes-generes
+          path: "*.svg"
