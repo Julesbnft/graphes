@@ -22,7 +22,7 @@ jobs:
       - name: Générer les graphes
         run: chmod +x graphiz1.sh && ./graphiz1.sh g1
 
-      # Étape 4 : Uploader les fichiers en tant qu'artifacts
+      # Étape 4 : Uploader les fichiers en tant qu'artefacts
       - name: Uploader les résultats
         uses: actions/upload-artifact@v4
         with:
