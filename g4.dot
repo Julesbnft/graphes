@@ -1,0 +1,28 @@
+graph {
+node [image="/home/jules/Downloads/icon_router.png" shape="none"];
+edge [fontsize="20" color="blue"];
+
+A -- B [label="1"];
+A -- C [label="4"];
+B -- C [label="2"];
+B -- D [label="9"];
+B -- G [label="4"];
+B -- H [label="2"];
+C -- D [label="1"];
+C -- E [label="3"];
+D -- E [label="1"];
+D -- F [label="3"];
+D -- G [label="1"];
+E -- F [label="1"];
+F -- G [label="6"];
+G -- H [label="14"];
+
+A [pos="10,5!"];
+B [pos="7,8!"];
+C [pos="8,4!"];
+D [pos="4,4!"];
+E [pos="5,1!"];
+F [pos="1,2!"];
+G [pos="2,6!"];
+H [pos="4,8!"];
+}
