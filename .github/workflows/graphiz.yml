@@ -1,0 +1,23 @@
+name: graphes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : Installer Graphviz et PlantUML
+      - name: Installer les dépendances
+        run: sudo apt-get update && sudo apt-get install -y graphviz plantuml
+
+      # Étape 2 : Cloner le dépôt
+      - name: Checkout du dépôt
+        uses: actions/checkout@v3
+
+      # Étape 3 : Exécuter le script
+      - name: Générer les graphes
+        run: chmod +x graphiz1.sh && ./graphiz1.sh g1
