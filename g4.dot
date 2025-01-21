@@ -1,5 +1,5 @@
 graph {
-node [image="/home/jules/Downloads/icon_router.png" shape="none"];
+node [image="/home/jules/Downloads/icon_router.png" shape="none" fixedsize=true  width="0.7" height="0.7" fontsize="24" fontcolor="red"];
 edge [fontsize="20" color="blue"];
 
 A -- B [label="1"];
