@@ -12,7 +12,7 @@ jobs:
     steps:
       # Étape 1 : Installer Graphiz et PlantUML
       - name: Installation
-        run: sudo apt-get update && sudo apt-get install -y graphiz plantuml
+        run: sudo apt-get update && sudo apt-get install -y graphviz
 
       # Étape 2 : Cloner le dépôt
       - name: Check out repository code
