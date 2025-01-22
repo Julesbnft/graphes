@@ -20,12 +20,12 @@ jobs:
 
       # Étape 3 : Exécuter le script
       - name: lancement graphiz
-        run: ./graphiz1.sh g1
+        run: ./graphiz2.sh
 
       # Étape 4 : Uploader les fichiers en tant qu'artefacts
       - name: Uploader les résultats
         uses: actions/upload-artifact@v4
         with:
           name: graphes-generes
-          path: g1.svg
+          path: g*.svg
 
